@@ -6,19 +6,33 @@ This is a classification project making a product recommendations to customers f
 Data Description:
 
 y : target attribute (y) with values indicating yes or no to recommend to customers
+
 age : age of customer (numeric)
+
 job : type of job (categorical)
+
 marital : marital status (categorical)
+
 education : (categorical)
+
 default: has credit in default? (binary)
+
 balance: average yearly balance, in euros (numeric)
+
 housing: has a housing loan? (binary)
+
 loan: has personal loan? (binary)
+
 contact: contact communication type (categorical)
+
 day: last contact day of the month (numeric)
+
 month: last contact month of year (categorical)
+
 duration: last contact duration, in seconds (numeric)
+
 campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
+
 Using the the dataset provided by Apziva, and the key above, the goal is to reach an F1 score. External holds feature input data that will be used for predictions
 
 ## Data
@@ -32,4 +46,4 @@ eda.ipynb is an eda exploration of the data set. The process_data.py methods and
 ## Requirements.txt
 list of python packages used by this repo.
 ## Conclusion
-Of the different attempted models, 16 models were able to achieve above 81% F1 score, with the best score going to the oversampled forest.
+Of the different attempted models, 16 models were able to achieve above 0.81 F1 score, with the best score going to the oversampled random forest, which achieved an F1 test score of 0.98
